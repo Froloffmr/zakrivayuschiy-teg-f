@@ -17,4 +17,70 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  background-color: var(--background__color);
+  background-image:var(--background-image);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.header {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  align-content: center;
+  justify-items: center;
+  gap: 25px;
+  outline: 2px solid var(--accent__color);
+  max-inline-size: 696px;
+  min-block-size: 323px;
+  margin: 100px auto;
+  background-color: var(--background__color);
+}
+
+.logo__wrapper {
+  display: grid;
+  justify-items: center;
+  align-self: end;
+  gap: 20px;
+  color: var(--accent__color);
+}
+
+.logo {
+  font-family: 'PressStart2P';
+  font-size: clamp(3.0625rem, 2.7768rem + 1.4286vw, 4.0625rem);
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.logo__item {
+  font-family: 'PressStart2P';
+  font-size: clamp(0.875rem, 0.7143rem + 0.8036vw, 1.4375rem);
+  text-transform: uppercase;
+}
+
+.theme-menu__list {
+display: grid;
+gap: 14px;
+color:inherit;
+}
+
+.theme-menu__button {
+  background-color: inherit;
+  border: none;
+  font-family: PressStart2P;
+  font-size: 14px;
+  text-transform: uppercase;
+  color:var(--accent__color);
+  position: relative;
+}
+
+.theme-menu__button:disabled{
+  opacity: 0.6;
+  color:var(--accent__color);
+}
+
+.theme-menu__button:disabled::before {
+  content: "►";
+  position: absolute;
+  left: -15px;
 }
