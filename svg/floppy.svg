@@ -1,6 +1,5 @@
 <svg width="210" height="210" viewBox="0 0 21 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 <symbol id="flop">
-<g id="floppy">
 <rect id="Rectangle 18" width="1.61538" height="1.61538" fill="currentColor"/>
 <rect id="Rectangle 17" y="1.61536" width="1.61538" height="1.61538" fill="currentColor"/>
 <rect id="Rectangle 19" y="3.23077" width="1.61538" height="1.61538" fill="currentColor"/>
@@ -81,6 +80,5 @@
 <rect id="Rectangle 50" x="21" y="8.0769" width="1.61538" height="1.61538" transform="rotate(-180 21 8.0769)" fill="currentColor"/>
 <rect id="Rectangle 51" x="21" y="6.46155" width="1.61538" height="1.61538" transform="rotate(-180 21 6.46155)" fill="currentColor"/>
 <rect id="Rectangle 52" x="21" y="4.84613" width="1.61538" height="1.61538" transform="rotate(-180 21 4.84613)" fill="currentColor"/>
-</g>
 </symbol>
 </svg>
