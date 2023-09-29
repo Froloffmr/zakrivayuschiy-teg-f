@@ -1,12 +1,22 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-    --background__color:#FFFFFF;
-    --button__text-color:#FFFFFF;
-    --accent__color:#000000;
-    --shadow__color:#FFFFFF;
-    --fill__color:#FF0000;
-    --background-image:
-    repeating-linear-gradient(#fff ,#fff 2px, transparent 2px,transparent 4px ),
-    repeating-linear-gradient(90deg ,#fff ,#fff 2px, transparent 2px,transparent 4px ),
-    linear-gradient(#e7e7e7 0.01%,#1a1a1a);
+  --background__color: #ffffff;
+  --button__text-color: #ffffff;
+  --accent__color: #000000;
+  --shadow__color: #ffffff;
+  --fill__color: #ff0000;
+  --background-image: repeating-linear-gradient(
+      #fff,
+      #fff 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      #fff,
+      #fff 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(#e7e7e7 0.01%, #1a1a1a);
 }
