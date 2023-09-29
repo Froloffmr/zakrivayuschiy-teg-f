@@ -53,7 +53,7 @@
   transition: fill 0.3s ease-in-out 0.05s;
   fill: var(--fill__color);
 }
-
+/*
 .like-icon.is-liked {
   .contur {
     fill: var(--fill__color);
@@ -76,6 +76,25 @@
 }
 
 .like-icon.is-liked {
+  .heart {
+    animation: scale 0.3s ease-in 0.3s forwards;
+    transform-origin: center;
+  }
+}
+*/
+.like-icon.is-liked {
+  .contur {
+    fill: var(--fill__color);
+    transition: fill 0.3s ease-in-out 0.05s;
+  }
+  .core,
+  .main-body {
+    fill: var(--fill__color);
+    transition: fill 0.1s ease-in-out 0.03s;
+  }
+  .sparks {
+    animation: sparks 0.3s ease-in 0.1s forwards;
+  }
   .heart {
     animation: scale 0.3s ease-in 0.3s forwards;
     transform-origin: center;
