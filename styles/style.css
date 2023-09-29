@@ -22,6 +22,12 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  font-family: 'Inter-Variable', 'inter';
+  font-size: 18px;
+  color: var(--accent__color);
+  display: grid;
+  justify-content: center;
+  gap: 30px;
 }
 
 .header {
@@ -30,11 +36,12 @@
   align-content: center;
   justify-items: center;
   gap: 25px;
-  outline: 2px solid var(--accent__color);
+  border: 2px solid var(--accent__color);
   max-inline-size: 696px;
   min-block-size: 323px;
-  margin: 100px auto;
   background-color: var(--background__color);
+  margin-block-start: 100px;
+  margin-block-end: 100px;
 }
 
 .logo__wrapper {
@@ -59,9 +66,9 @@
 }
 
 .theme-menu__list {
-display: grid;
-gap: 14px;
-color:inherit;
+  display: grid;
+  gap: 14px;
+  color:inherit;
 }
 
 .theme-menu__button {
@@ -72,15 +79,273 @@ color:inherit;
   text-transform: uppercase;
   color:var(--accent__color);
   position: relative;
+  cursor: pointer;
+  background-image: linear-gradient(var(--accent__color), var(--accent__color));
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s ;
 }
 
 .theme-menu__button:disabled{
   opacity: 0.6;
   color:var(--accent__color);
+  pointer-events: none;
 }
 
 .theme-menu__button:disabled::before {
   content: "►";
   position: absolute;
-  left: -15px;
+  animation: triangle 1s infinite;
+  top:-2px;
+}
+
+.theme-menu__button:hover {
+  opacity: 0.6;
+  transition-timing-function: ease;
+}
+
+.theme-menu__button:focus {
+  outline: none;
+}
+
+.theme-menu__button:focus-visible {
+ background-size: 100% 2px;
+  opacity: 0.6;
+}
+
+.main {
+  max-inline-size: 696px;
+  margin: 0 auto;
+}
+
+.title {
+  padding:10px;
+}
+
+.content__section {
+  border: 2px solid var(--accent__color);
+  background-color: var(--background__color);
+}
+
+.picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  outline: 2px solid var(--accent__color);
+}
+
+.picture__box {
+  position: relative;
+}
+
+.lable {
+  position:absolute;
+  right: 25px;
+  top: 20px;
+  font-family:'PressStart2P';
+  font-size: 14px;
+  font-style: normal;
+  text-transform: uppercase;
+  mix-blend-mode: hard-light;
+  opacity: 0.5;
+  text-shadow: 
+  1px 0 0 var(--shadow__color), 
+  0 1px 0 var(--shadow__color), 
+  -1px 0 0 var(--shadow__color), 
+  0 -1px 0 var(--shadow__color);
+}
+
+.content__text {
+  display: grid;
+  gap: 25px;
+  padding:25px;
+}
+
+.botton__wrapper {
+  display: flex;
+  justify-content: flex-end;
+  height: 38px;
+  gap: 10px;
+}
+
+.card__icon-button {
+  display: flex;
+  height: 38px;
+  align-items: center;
+  border: none;
+  background-color: inherit;
+}
+
+.card__icon-button:focus {
+  outline: none;
+}
+.card__icon-button:focus-visible {
+  border: 2px solid var(--accent__color);
+}
+
+.card__like-button {
+  border: 2px solid var(--accent__color);
+  background-color: inherit;
+  font-family: 'PressStart2P';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  width: 130px;
+  height: 38px;
+  position:relative;
+  transition: 0.3s;
+}
+
+.card__like-button:hover {
+  transform: scale(1);
+}
+
+.card__like-button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--accent__color);
+  transition: all 0.5s ease-in-out;
+}
+
+.card__like-button:hover::after {
+  width: 100%;
+} 
+
+.card__like-button:focus {
+  outline: none;
+}
+
+.card__like-button:focus-visible {
+  box-shadow: 2px 2px var(--accent__color);
+  cursor: pointer; 
+}
+
+.button__text {
+  color: var(--button__text-color);
+  mix-blend-mode: difference;
+  position: relative;
+  z-index: 1;
+}
+
+.like-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.footer {
+  margin: 0 auto;
+  max-inline-size: 696px;
+}
+
+.footer__button {	
+  display: grid;
+  align-content: space-evenly;
+  justify-items: center;
+  width: clamp(306px, 50vw, 335px);
+  min-height: 80px;
+  background-color: var(--background__color);
+  border:2px solid var(--accent__color);
+  font-family: PressStart2P;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  transition: 0.3s;
+  position: relative;
+}
+
+.footer__button:hover {
+  transform: scale(1);
+}
+
+.footer__button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--accent__color);
+  transition: all 0.5s ease-in-out;
+}
+
+.footer__button:hover::after {
+  width: 100%;
+} 
+
+
+.footer__button:focus {
+  outline: none;
+}
+
+.footer__button:focus-visible {
+  box-shadow: 2px 2px var(--accent__color);
+  cursor: pointer;
+}
+
+.floppy {
+  width: 21px;
+  color: var(--button__text-color);
+  mix-blend-mode: difference;
+  position: relative;
+  z-index: 1;
+}
+
+.sparks {
+  opacity: 0;
+}
+
+.dialog {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  border: 2px solid var(--accent__color);
+min-inline-size: 341px;
+min-block-size: 195px;
+color: var(--accent__color);
+font-family: 'PressStart2P';
+background: var(--background__color);
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%;
+text-transform: uppercase;
+position: fixed;
+inset: 0;
+padding: 30px 40px;
+}
+
+dialog:not([open]) {
+  pointer-events: none;
+  opacity: 0;
+} 
+
+.dialog__section {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  align-items: center;
+  gap: 20px;
+  width: 293px;
+  height: 63px;
+}
+
+dialog::backdrop {
+  opacity: 0.75;
+  background:var(--accent__color,#000);
+} 
+
+.floppy__dialog {
+  width: 39px;
+  height: 39px;
+}
+
+.dialog__button {
+  border: 2px solid var(--accent__color);
+  background: var(--background__color);
+  height: 30px;
 }

@@ -7,7 +7,10 @@
 
 :root.theme-dark {
     --background__color:#000000 ;
+    --button__text-color:#00CC14 ;
     --accent__color:#00CC14 ;
+    --fill__color:#FF0000;
+    --shadow__color:#000000;
     --background-image:
     repeating-linear-gradient(#000 ,#000 2px, transparent 2px,transparent 4px ),
     repeating-linear-gradient(90deg ,#000 ,#000 2px, transparent 2px,transparent 4px ),
@@ -16,7 +19,10 @@
 
 :root.theme-light {
     --background__color:#FFFFFF;
+    --button__text-color:#FFFFFF;
     --accent__color:#000000;
+    --fill__color:#FF0000;
+    --shadow__color:#FFFFFF;
     --background-image:
     repeating-linear-gradient(#fff ,#fff 2px, transparent 2px,transparent 4px ),
     repeating-linear-gradient(90deg ,#fff ,#fff 2px, transparent 2px,transparent 4px ),
