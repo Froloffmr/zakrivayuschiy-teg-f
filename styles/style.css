@@ -118,6 +118,8 @@
 }
 
 .main {
+  display: grid;
+  gap: 50px;
   max-inline-size: 696px;
   margin: 0 auto;
 }
@@ -154,7 +156,6 @@
   font-family: "PressStart2P", Fancy;
   font-size: 14px;
   font-style: normal;
-  text-transform: uppercase;
   mix-blend-mode: hard-light;
   opacity: 0.5;
   text-shadow: 1px 0 0 var(--shadow__color), 0 1px 0 var(--shadow__color),
@@ -247,7 +248,7 @@
 }
 
 .footer {
-  margin: 0 auto;
+  margin: 50px auto 100px auto;
   max-inline-size: 696px;
 }
 

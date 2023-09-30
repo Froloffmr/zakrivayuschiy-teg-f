@@ -33,3 +33,31 @@
     right: 12px;
   }
 }
+
+.sepia {
+  filter: sepia(60%);
+}
+
+.blur {
+  filter: blur(5px);
+}
+
+.brightness {
+  filter: brightness(0.3);
+}
+
+.hue-rotate {
+  filter: hue-rotate(90deg);
+}
+.opacity {
+  filter: opacity(55%);
+}
+
+.saturate {
+  filter: saturate(30%);
+}
+
+.over__filter {
+  filter: contrast(200%);
+  filter: hue-rotate(90deg);
+}
