@@ -58,6 +58,5 @@
 }
 
 .over__filter {
-  filter: contrast(200%);
-  filter: hue-rotate(90deg);
+  filter: contrast(200%) hue-rotate(90deg) saturate(30%) ;
 }
