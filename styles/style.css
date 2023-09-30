@@ -27,23 +27,25 @@
   color: var(--accent__color);
   display: grid;
   justify-content: center;
-  gap: 30px;
 }
 
 .header {
   display: grid;
-  grid-template-rows: 2fr 1fr;
+  grid-template-rows: 2.2fr 1fr;
   align-content: center;
   justify-items: center;
-  gap: 25px;
   border: 2px solid var(--accent__color);
   max-inline-size: 696px;
-  min-block-size: 323px;
+  min-block-size: 364px;
   background-color: var(--background__color);
   margin-block-start: 100px;
   margin-block-end: 100px;
 }
 
+.theme-menu.header__theme-menu {
+  display: grid;
+  padding-inline-start: 20px;
+}
 .logo__wrapper {
   display: grid;
   justify-items: center;
@@ -67,14 +69,15 @@
 
 .theme-menu__list {
   display: grid;
-  gap: 14px;
+  gap: 7px;
   color: inherit;
+  align-content: center;
 }
 
 .theme-menu__button {
   background-color: inherit;
   border: none;
-  font-family: "PressStart2P" , Fancy;
+  font-family: "PressStart2P", Fancy;
   font-size: 14px;
   text-transform: uppercase;
   color: var(--accent__color);
@@ -120,7 +123,12 @@
 }
 
 .title {
-  padding: 10px;
+  padding:10px 10px 10px 10px;
+  font-family: "Inter-Variable";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .content__section {
@@ -141,8 +149,8 @@
 
 .lable {
   position: absolute;
-  right: 25px;
-  top: 20px;
+  right: 23px;
+  top: 23px;
   font-family: "PressStart2P", Fancy;
   font-size: 14px;
   font-style: normal;

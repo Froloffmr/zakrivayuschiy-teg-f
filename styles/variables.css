@@ -20,3 +20,16 @@
     ),
     linear-gradient(#e7e7e7 0.01%, #1a1a1a);
 }
+
+@media (width <= 375px) {
+  .header {
+    min-block-size: 326px;
+    grid-template-rows: 2.5fr 1.5fr;
+  }
+  .title {
+    padding: 8px 10px 5px 10px;
+  }
+  .lable {
+    right: 12px;
+  }
+}
