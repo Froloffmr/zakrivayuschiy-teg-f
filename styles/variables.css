@@ -3,6 +3,8 @@
   --background__color: #ffffff;
   --button__text-color: #ffffff;
   --accent__color: #000000;
+  --variable__font:"Inter-Variable";
+  --accent__font:"PressStart2P";
   --shadow__color: #ffffff;
   --fill__color: #ff0000;
   --background-image: repeating-linear-gradient(
@@ -19,19 +21,6 @@
       transparent 4px
     ),
     linear-gradient(#e7e7e7 0.01%, #1a1a1a);
-}
-
-@media (width <= 375px) {
-  .header {
-    min-block-size: 326px;
-    grid-template-rows: 2.5fr 1.5fr;
-  }
-  .title {
-    padding: 8px 10px 5px 10px;
-  }
-  .lable {
-    right: 12px;
-  }
 }
 
 .sepia {
